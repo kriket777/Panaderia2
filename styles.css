@@ -1,0 +1,226 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #F9F6EF; /* Fondo de tono hueso */
+    color: #4D3319;
+}
+
+/* Encabezado */
+.encabezado {
+    background-image: url('https://i.pinimg.com/736x/79/2d/1e/792d1ed6193b1aa7d330a80cfba61ad5.jpg'); /* Imagen de fondo para el encabezado */
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.contenido-encabezado {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.encabezado h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+}
+
+.frase {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Carrusel de temporada */
+.carrusel {
+    background-color: #F6E5C9;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.carrusel h2 {
+    font-size: 2rem;
+    color: #8C3D3D;
+    margin-bottom: 2rem;
+}
+
+.elementos-carrusel {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.elemento-carrusel {
+    background-color: #FFF;
+    border: 2px solid #8C3D3D;
+    border-radius: 8px;
+    width: 200px;
+    padding: 1rem;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.elemento-carrusel img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.elemento-carrusel h3 {
+    font-size: 1.2rem;
+    color: #4D3319;
+}
+
+.descripcion {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: #7A503E;
+}
+
+.precio {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #8C3D3D;
+    margin-top: 0.5rem;
+}
+
+/* Menú de panes tradicionales */
+.menu {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2rem;
+    color: #8C3D3D;
+    margin-bottom: 2rem;
+}
+
+.cuadricula-menu {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.elemento-menu {
+    background-color: #FFF7E1;
+    border: 2px solid #8C3D3D;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 180px;
+    text-align: center;
+    color: #4D3319;
+}
+
+.elemento-menu img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.elemento-menu h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.frase-menu {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #7A503E;
+    margin-bottom: 0.5rem;
+}
+
+.pie-pagina {
+    background-color: #4D3319;
+    color: #FFF;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+.frase-aesthetic {
+    font-style: italic;
+}
+
+.gestion-inventario {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.formulario label, .formulario input, .formulario textarea, .formulario select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.tabla-inventario {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-inventario th, .tabla-inventario td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-inventario th {
+    background-color: #eae7d6;
+}
+
+.boton-editar, .boton-eliminar {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.boton-editar {
+    background-color: #4CAF50;
+}
+
+.boton-eliminar {
+    background-color: #f44336;
+}
+
+footer {
+    background-color: #f3e9d2; /* Fondo beige suave */
+    padding: 2em;
+    text-align: center;
+    border-top: 2px solid #d2691e; /* Línea superior */
+}
+
+.frase-llamativa {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    color: #d2691e;
+    margin-bottom: 1em;
+}
+
+.link-gestion {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1.5em;
+    background-color: #a0522d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.link-gestion:hover {
+    background-color: #d2691e; /* Cambia el color al pasar el mouse */
+}

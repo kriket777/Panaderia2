@@ -1,0 +1,219 @@
+** {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+    background-color: #f3e4d7; /* Fondo suave color crema */
+    color: #3e2a1c; /* Color de texto oscuro */
+}
+
+header {
+    background-color: #7c4a4a; /* Color oscuro para encabezado */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.frase-bonita {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.carrusel, .menu {
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #5d3c31; /* Color para subtítulos */
+}
+
+.elementos-carrusel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem; /* Espacio entre elementos */
+}
+
+.elemento-carrusel, .cuadricula-menu {
+    background-color: #f9f0e2; /* Color de fondo para productos */
+    border: 2px solid #a27b5d; /* Borde en tonos café */
+    border-radius: 10px;
+    width: 300px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.elemento-carrusel img, .cuadricula-menu img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.descripcion {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.precio, .cantidad {
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.boton-editar, .boton-eliminar, .boton-agregar {
+    background-color: #a27b5d; /* Color de fondo de botones */
+    color: #fff; /* Color de texto */
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-editar:hover, .boton-eliminar:hover, .boton-agregar:hover {
+    background-color: #8c6546; /* Color más oscuro al pasar el mouse */
+}
+
+.agregar {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Espacio opcional entre el contenido superior y el botón */
+}
+
+.boton-agregar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d69d6d; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-agregar:hover {
+    background-color: #b86a4f; /* Color al pasar el mouse */
+}
+
+
+.modal {
+    display: none; /* Ocultar modal por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+.modal-contenido {
+    background-color: #f9f0e2;
+    margin: 5% auto; /* Ajusta el margen para que sea más responsivo */
+    padding: 20px;
+    border: 1px solid #a27b5d;
+    width: 90%; /* Cambia a 90% para pantallas más pequeñas */
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    transition: all 0.3s ease; /* Suaviza las transiciones */
+}
+
+
+.cerrar {
+    color: #a27b5d;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column; /* Colocar elementos en columna */
+    gap: 1rem; /* Espacio entre elementos del formulario */
+}
+
+.tabla-inventario {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid black;
+    
+    
+}
+table{
+    
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr{
+    border: 1px solid black;
+   
+}
+th{
+    border: 1px solid black;
+   
+}
+
+
+.tabla-inventario th, .tabla-inventario td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.tabla-inventario th {
+    background-color: #eae7d6;
+}
+
+.boton-editar, .boton-eliminar {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.boton-editar {
+    background-color: #4CAF50;
+}
+
+.boton-eliminar {
+    background-color: #f44336;
+}
+
+.imagen{
+    width: 100px;
+    height: 100px;
+
+
+}
+
+footer {
+    background-color: #7c4a4a; /* Color oscuro para el pie de página */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.frase-llamativa {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
